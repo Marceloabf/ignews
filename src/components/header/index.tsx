@@ -1,6 +1,7 @@
 import { styled } from "@stitches/react"
 import Image from "next/image"
 import logo from "../../../public/images/logo.svg"
+import { SignInButton } from "../SigInButton"
 
 const HeaderContainer = styled('header',{
     height: '5rem',
@@ -50,6 +51,9 @@ const HeaderContent = styled('div',{
 
             }
         }
+    },
+    button:{
+        marginLeft: 'auto'
     }
 })
 
@@ -62,6 +66,7 @@ export function Header(){
                     <a className="isActive" href="">Home</a>
                     <a href="">Posts</a>
                 </nav>
+                <SignInButton />
             </HeaderContent>
         </HeaderContainer>
     )
